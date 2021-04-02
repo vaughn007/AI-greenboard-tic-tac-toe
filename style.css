@@ -1,0 +1,185 @@
+* {
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { 
+
+background-image: url("chalky-art.png");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-color: #497959;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+body {
+font-family: 'Walter Turncoat', cursive;
+
+
+}
+
+
+
+body {
+  color: #545454;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 10px;
+  padding: 10px;
+  
+  
+}
+
+
+
+.title {
+  text-align: center;
+  
+}
+
+.title span {
+  color: #F2EBD3;
+}
+
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.status span {
+  color: #F2EBD3;
+}
+
+.reset {
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.reset:hover {
+  color: #F2EBD3;
+}
+
+.game-grid {
+  border: 1px solid #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+
+.game-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 6.25rem;
+  width: 6.25rem;
+  border: 1px solid #fff;
+ 
+}
+
+canvas{
+    background:transparent;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .game-grid {
+    margin-top: 25px;
+    grid-gap: 10px;
+  }
+
+  .game-cell {
+    height: 150px;
+    width: 150px;
+    
+  }
+
+  
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    margin: 25px;
+    padding: 25px;
+  }
+
+  .game-cell {
+    height: 100px;
+    width: 100px;
+  }
+
+  
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px; 
+    padding: 0.3125rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Walter Turncoat', cursive;
+    background-color: rgba(148, 192, 204, 0.2);
+    color: #fff;
+    border: 3px solid rgba(255,255,255,.8);
+    border-image: url("chalkBox.png") 12;
+    border-radius: 4px;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: rgba(50, 92, 103, 0.2);
+    
+    
+}
+
+#rules {
+    width: 318px;
+    height: 318px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 1rem;
+    
+}
+
+p {
+    font-size: 26px;
+    color: #dfdfdf;
+}
+
+h2 {
+    font-size: 35px;
+    color: #dfdfdf;
+}
+
+h1#head { 
+    font-size: 3.125rem;
+    color: #fff;
+    padding-top: 20px;
+    
+    
+    
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+     
