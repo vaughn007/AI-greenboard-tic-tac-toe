@@ -11,7 +11,8 @@ background-image: url("chalky-art.png");
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-background-color: #497959;
+background-color: #393e46;
+/* background-color: #497959; */
 }
 
 @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
